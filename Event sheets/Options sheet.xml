@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Options sheet</name>
+    <events>
+        <comment>Exercise times, language etc - 30sec training 10sec rest</comment>
+    </events>
+</c2eventsheet>

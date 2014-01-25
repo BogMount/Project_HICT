@@ -1,0 +1,287 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>HICT</name>
+    <description>High Intensity Circuit Training</description>
+    <version>1.0</version>
+    <author>Erkka Nevala</author>
+    <author-email>erkka.nevala@gmail.com</author-email>
+    <author-website></author-website>
+    <app-id></app-id>
+    <unique-id>3om4fqck6p5en</unique-id>
+    <saved-with-version>15802</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="gamepad" version="1">Gamepad</plugin>
+        <plugin author="Scirra" id="Button" version="1">Button</plugin>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="AJAX" version="1">AJAX</plugin>
+        <plugin author="Scirra" id="Arr" version="1">Array</plugin>
+        <plugin author="Scirra" id="CJSAds" version="1">CocoonJS</plugin>
+        <plugin author="Scirra" id="Dictionary" version="1">Dictionary</plugin>
+        <plugin author="Scirra" id="Function" version="1">Function</plugin>
+        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
+        <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
+        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
+        <plugin author="Scirra" id="NinePatch" version="1">9-patch</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="TextBox" version="1">Text box</plugin>
+        <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
+        <plugin author="Zack0Wack0/Scirra" id="WebStorage" version="1">WebStorage</plugin>
+        <plugin author="Scirra" id="XML" version="1">XML</plugin>
+        <plugin author="Scirra/Intel" id="appMobi" version="1">Intel XDK</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Anchor" version="1">Anchor</behavior>
+        <behavior author="Scirra" id="DragnDrop" version="1">Drag &amp; Drop</behavior>
+        <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
+    </used-behaviors>
+    <used-effects>
+        <effect author="Viktor Korsun" id="waterbg">Water background</effect>
+        <effect author="Scirra" id="hardlight">Hard Light</effect>
+        <effect author="Scirra" id="overlay">Overlay</effect>
+        <effect author="Scirra" id="difference">Difference</effect>
+    </used-effects>
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>480</width>
+        <height>800</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <first-layout>Loader</first-layout>
+    <use-loader-layout>1</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Scale</prop>
+        <prop name="Hide address bar">No</prop>
+        <prop name="Loader style">Progress bar only</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use iOS retina display">Yes</prop>
+    </configuration-settings>
+    <object-folder expanded="1">
+        <object-type name="Keyboard" sid="5645318482324546">
+            <plugin id="Keyboard" />
+        </object-type>
+        <object-type name="Touch" sid="1277321674086234">
+            <plugin id="Touch" />
+        </object-type>
+        <object-type name="Audio" sid="6918371355805243">
+            <plugin id="Audio" />
+        </object-type>
+        <object-type name="Browser" sid="879126829777626">
+            <plugin id="Browser" />
+        </object-type>
+        <object-type name="WebStorage" sid="9136610257831321">
+            <plugin id="WebStorage" />
+        </object-type>
+        <object-type global="1" name="Array" sid="6709893713234733">
+            <plugin id="Arr" />
+        </object-type>
+        <object-type global="1" name="Dictionary" sid="7029056443582395">
+            <plugin id="Dictionary" />
+        </object-type>
+        <object-type global="1" name="XML" sid="2597406667954148">
+            <plugin id="XML" />
+        </object-type>
+        <object-type name="Button" sid="4528967072735478">
+            <plugin id="Button" />
+        </object-type>
+        <object-type name="TextBox" sid="9235890327550046">
+            <plugin id="TextBox" />
+        </object-type>
+        <object-type name="Text" sid="2759797498401943">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="AJAX" sid="42857400508725">
+            <plugin id="AJAX" />
+        </object-type>
+        <object-type name="Mouse" sid="7907840877901054">
+            <plugin id="Mouse" />
+        </object-type>
+        <object-type name="appMobi" sid="659015150242262">
+            <plugin id="appMobi" />
+        </object-type>
+        <object-type name="Function" sid="6721983815890726">
+            <plugin id="Function" />
+        </object-type>
+        <object-type name="CocoonJS" sid="2414209841414179">
+            <plugin id="CJSAds" />
+        </object-type>
+        <object-type name="Lataus" sid="8188772725431951">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Sprite" sid="4453195373194932">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Anchor" sid="2579970907099686">
+                    <behavior id="Anchor" />
+                </behavior-type>
+                <behavior-type name="DragDrop" sid="2720082915221597">
+                    <behavior id="DragnDrop" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2385179773688483" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="9patch" sid="1234492936109342">
+            <plugin id="NinePatch" />
+            <texture />
+        </object-type>
+        <object-type name="9patch2" sid="7967748946739286">
+            <plugin id="NinePatch" />
+            <behaviors>
+                <behavior-type name="DragDrop" sid="9208474675034337">
+                    <behavior id="DragnDrop" />
+                </behavior-type>
+            </behaviors>
+            <effects>
+                <effect-type name="Overlay">
+                    <effect id="overlay" />
+                </effect-type>
+            </effects>
+            <texture />
+        </object-type>
+        <object-type name="Continue_btn" sid="9651427875183451">
+            <plugin id="NinePatch" />
+            <effects>
+                <effect-type name="HardLight">
+                    <effect id="hardlight" />
+                </effect-type>
+                <effect-type name="Difference">
+                    <effect id="difference" />
+                </effect-type>
+            </effects>
+            <texture />
+        </object-type>
+        <object-type name="Sprite2" sid="2398027388174545">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4392077321456729" speed="5">
+                    <frame duration="1" hotspotX="0.519084" hotspotY="0.502488" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Continue_txt" sid="6428289479219463">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="teksti" sid="6857050430078508">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Gamepad" sid="5213462747559311">
+            <plugin id="gamepad" />
+        </object-type>
+        <object-type global="1" name="Centerpoint" sid="7570731961773611">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="DragDrop" sid="3055250997315596">
+                    <behavior id="DragnDrop" />
+                </behavior-type>
+                <behavior-type name="ScrollTo" sid="655764496609332">
+                    <behavior id="scrollto" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1357657252779008" speed="5">
+                    <frame duration="1" hotspotX="0.416667" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite3" sid="827260237791752">
+            <plugin id="Sprite" />
+            <effects>
+                <effect-type name="WaterBackground">
+                    <effect id="waterbg" />
+                </effect-type>
+            </effects>
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9627468711643636" speed="5">
+                    <frame duration="1" hotspotX="-0.684385" hotspotY="-0.280438" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Timertext" sid="4131237311432262">
+            <plugin id="Text" />
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder expanded="1">
+        <layout>Loader.xml</layout>
+        <layout>XML import.xml</layout>
+        <layout>Menu.xml</layout>
+        <layout>Timer.xml</layout>
+        <layout>Options.xml</layout>
+    </layout-folder>
+    <event-folder expanded="1">
+        <event-sheet>XML sheet.xml</event-sheet>
+        <event-sheet>Globals.xml</event-sheet>
+        <event-sheet>Functions.xml</event-sheet>
+        <event-sheet>Loader sheet.xml</event-sheet>
+        <event-sheet>Menu sheet.xml</event-sheet>
+        <event-sheet>Timer sheet.xml</event-sheet>
+        <event-sheet>Notes.xml</event-sheet>
+        <event-sheet>Options sheet.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Keyboard" uid="21" />
+        <global-instance type="Touch" uid="22">
+            <properties>
+                <use-mouse-input>Yes</use-mouse-input>
+            </properties>
+        </global-instance>
+        <global-instance type="Audio" uid="23">
+            <properties>
+                <timescale-audio>Off</timescale-audio>
+                <saveload>All</saveload>
+                <positioned-audio></positioned-audio>
+                <panning-model>HRTF</panning-model>
+                <distance-model>Inverse</distance-model>
+                <listener-z-height>600</listener-z-height>
+                <reference-distance>600</reference-distance>
+                <maximum-distance>10000</maximum-distance>
+                <roll-off-factor>1</roll-off-factor>
+                <speed-of-sound>5000</speed-of-sound>
+                <doppler-factor>1</doppler-factor>
+            </properties>
+        </global-instance>
+        <global-instance type="Browser" uid="24" />
+        <global-instance type="WebStorage" uid="25" />
+        <global-instance type="AJAX" uid="26" />
+        <global-instance type="Mouse" uid="27" />
+        <global-instance type="appMobi" uid="28" />
+        <global-instance type="Function" uid="29" />
+        <global-instance type="CocoonJS" uid="30">
+            <properties>
+                <store-mode>Unmanaged</store-mode>
+                <store-sandbox>Enabled</store-sandbox>
+            </properties>
+        </global-instance>
+        <global-instance type="Gamepad" uid="31">
+            <properties>
+                <analog-deadzone>25</analog-deadzone>
+            </properties>
+        </global-instance>
+    </global-instances>
+    <sounds-folder expanded="1">
+        <file name="Pickup_Coin.m4a" />
+        <file name="Pickup_Coin.ogg" />
+        <file name="Pickup_Coin.wav" />
+    </sounds-folder>
+    <music-folder expanded="1" />
+    <files-folder expanded="1">
+        <file-folder expanded="0" name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="loading-logo.png" />
+            <file name="icon-256.png" />
+        </file-folder>
+        <file name="catalog.xml" />
+    </files-folder>
+</c2project>

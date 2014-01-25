@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Loader sheet</name>
+    <events>
+        <comment>Loader layout</comment>
+        <event-block sid="4080608883777002">
+            <conditions>
+                <condition id="-8" name="Compare two values" sid="9218437610757365" type="System">
+                    <param id="0" name="First value">loadingprogress * 100</param>
+                    <param id="1" name="Comparison">2</param>
+                    <param id="2" name="Second value">99</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="2446677085070351" type="Lataus">
+                    <param id="0" name="Text">round(loadingprogress * 100) &amp; &quot;%&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="271220504021399">
+            <conditions>
+                <condition id="-25" name="On loader layout complete" sid="9952642412307852" type="System" />
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="3131957574600528" type="System">
+                    <param id="0" name="Layout">Menu</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

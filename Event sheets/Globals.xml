@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Globals</name>
+    <events>
+        <variable constant="0" name="Timer" sid="9457621455058603" static="0" type="number">30</variable>
+        <comment>Globals</comment>
+        <variable comment="current loop" constant="0" name="Loop" sid="8650514927098184" static="0" type="number">0</variable>
+        <variable constant="0" name="stars" sid="2516304958452218" static="0" type="text"></variable>
+    </events>
+</c2eventsheet>

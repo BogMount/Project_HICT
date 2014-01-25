@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Menu sheet</name>
+    <events>
+        <event-block sid="3709628791439164">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="8864788531136226" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">Continue_btn</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="1739612195214311" type="System">
+                    <param id="0" name="Layout">Timer</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5058857038937336">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="5131155724463439" type="Mouse">
+                    <param id="0" name="Object">Continue_btn</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-27" name="Set effect enabled" sid="1927560725138175" type="Continue_btn">
+                    <param id="0" name="Mode">1</param>
+                    <param id="1" name="Effect">&quot;Difference&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1041859285730498">
+            <conditions>
+                <condition id="7" inverted="1" name="Cursor is over object" sid="1574974816589802" type="Mouse">
+                    <param id="0" name="Object">Continue_btn</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-27" name="Set effect enabled" sid="2739367413456631" type="Continue_btn">
+                    <param id="0" name="Mode">0</param>
+                    <param id="1" name="Effect">&quot;Difference&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1484509900266607">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="2395207164759159" type="Mouse">
+                    <param id="0" name="Object">teksti</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set font color" sid="8937493166157721" type="teksti">
+                    <param id="0" name="Color">rgb(0, 0, 0)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4822263175141149">
+            <conditions>
+                <condition id="7" inverted="1" name="Cursor is over object" sid="5891278167306043" type="Mouse">
+                    <param id="0" name="Object">teksti</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set font color" sid="6839372737655086" type="teksti">
+                    <param id="0" name="Color">rgb(255, 255, 115)</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

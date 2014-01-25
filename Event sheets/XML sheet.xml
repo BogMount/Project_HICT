@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>XML sheet</name>
+    <events>
+        <comment>Includes</comment>
+        <include>Functions</include>
+        <include>Globals</include>
+        <comment>Main</comment>
+        <event-block sid="4995527499942563">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="9849544054733067" type="System" />
+            </conditions>
+            <actions>
+                <action id="1" name="Request project file" sid="3749407126614022" type="AJAX">
+                    <param id="0" name="Tag">&quot;catalog&quot;</param>
+                    <param id="1" name="File">catalog.xml</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="159259833568793">
+            <conditions>
+                <condition id="0" name="On completed" sid="7279884897755839" type="AJAX">
+                    <param id="0" name="Tag">&quot;catalog&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Load" sid="7964932159631065" type="XML">
+                    <param id="0" name="XML">AJAX.LastData</param>
+                </action>
+                <action id="0" name="Set text" sid="8836589960509664" type="Text">
+                    <param id="0" name="Text">&quot; &quot;</param>
+                </action>
+                <action id="4" name="Clear local storage" sid="2036030893133979" type="WebStorage" />
+            </actions>
+            <sub-events>
+                <event-block sid="7500168495112286">
+                    <conditions>
+                        <condition id="0" name="For each node" sid="2545109189538482" type="XML">
+                            <param id="0" name="XPath">&quot;/Catalog&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="1" name="Append text" sid="2959106944541568" type="Text">
+                            <param id="0" name="Text">&quot;Albums:&quot;&amp;XML.NodeCount(&quot;Album&quot;)</param>
+                        </action>
+                        <action id="1" name="Append text" sid="4167694070101823" type="Text">
+                            <param id="0" name="Text">newline</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="6626870009200255">
+                            <conditions>
+                                <condition id="0" name="For each node" sid="2096068389770599" type="XML">
+                                    <param id="0" name="XPath">&quot;Album&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="1" name="Append text" sid="2160562192770102" type="Text">
+                                    <param id="0" name="Text">newline &amp; XML.StringValue(&quot;@artist&quot;) &amp; newline</param>
+                                </action>
+                                <action id="1" name="Append text" sid="4792268539033315" type="Text">
+                                    <param id="0" name="Text">XML.StringValue(&quot;@title&quot;) &amp; newline</param>
+                                </action>
+                                <action id="1" name="Append text" sid="400373527019815" type="Text">
+                                    <param id="0" name="Text">&quot;Tracks:&quot;&amp;XML.NodeCount(&quot;Track&quot;)</param>
+                                </action>
+                                <action id="1" name="Append text" sid="1319332686095838" type="Text">
+                                    <param id="0" name="Text">newline</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="9233422915754133" type="System">
+                                    <param id="0" name="Variable">Loop</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="48490201856759">
+                                    <conditions>
+                                        <condition id="0" name="For each node" sid="7891643629401432" type="XML">
+                                            <param id="0" name="XPath">&quot;Track&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Add to" sid="5081343278089616" type="System">
+                                            <param id="0" name="Variable">Loop</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="0" name="Call function" sid="2548048810465526" type="Function">
+                                            <param id="0" name="Name">&quot;stars&quot;</param>
+                                            <param id="1" name="Parameter {n}">int( XML.StringValue(&quot;@rating&quot;))</param>
+                                        </action>
+                                        <action id="1" name="Append text" sid="1977284148020154" type="Text">
+                                            <param id="0" name="Text">Loop &amp; &quot;: &quot;</param>
+                                        </action>
+                                        <action id="1" name="Append text" sid="3049122705180049" type="Text">
+                                            <param id="0" name="Text">XML.StringValue(&quot;node()&quot;) &amp; &quot;, &quot;</param>
+                                        </action>
+                                        <action id="1" name="Append text" sid="300007763772909" type="Text">
+                                            <param id="0" name="Text">str(Function.ReturnValue)&amp;&quot; &quot;</param>
+                                        </action>
+                                        <action id="1" name="Append text" sid="8174989029558105" type="Text">
+                                            <param id="0" name="Text"> XML.StringValue(&quot;@length&quot;) &amp; newline</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="4954662955666526">
+            <conditions>
+                <condition behavior="DragDrop" id="1" name="On drag start" sid="4876143831245362" type="Sprite" />
+            </conditions>
+            <actions>
+                <action behavior="Anchor" id="0" name="Set enabled" sid="1297758007908037" type="Sprite">
+                    <param id="0" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="729208362327544">
+            <conditions>
+                <condition behavior="DragDrop" id="2" name="On drop" sid="6190174065318387" type="Sprite" />
+            </conditions>
+            <actions>
+                <action behavior="Anchor" id="0" name="Set enabled" sid="6404468563975253" type="Sprite">
+                    <param id="0" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

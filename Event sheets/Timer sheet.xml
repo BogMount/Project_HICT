@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Timer sheet</name>
+    <events>
+        <include>Globals</include>
+        <include>Functions</include>
+        <event-block sid="9948122671570467">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="1451587111009124" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="4698353799594373" type="Timertext">
+                    <param id="0" name="Text">str(timer)&amp;&quot; s&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1799943869078083">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="8365727217843799" type="System">
+                    <param id="0" name="Interval (seconds)">1.0</param>
+                </condition>
+                <condition id="-8" name="Compare two values" sid="518084427990263" type="System">
+                    <param id="0" name="First value">Timer</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Second value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="9105397554827659" type="System">
+                    <param id="0" name="Variable">Timer</param>
+                    <param id="1" name="Value">Timer-1</param>
+                </action>
+                <action id="0" name="Set text" sid="9495638628899245" type="Timertext">
+                    <param id="0" name="Text">str(timer)&amp;&quot; s&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8374764091742797">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="6491825507535112" type="System">
+                    <param id="0" name="Interval (seconds)">Timer/10</param>
+                </condition>
+                <condition id="-8" name="Compare two values" sid="2580774878665211" type="System">
+                    <param id="0" name="First value">Timer</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Second value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="7180736788292562" type="Audio">
+                    <param id="0" name="Audio file">Pickup_Coin</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

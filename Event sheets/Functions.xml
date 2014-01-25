@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Functions</name>
+    <events>
+        <comment>stars muuttaa annetun paremetri numeron vastaaviksi tähti (*)-merkeiksi. Esim 4 = ****</comment>
+        <event-block sid="6403788159286309">
+            <conditions>
+                <condition id="0" name="On function" sid="6698649565802983" type="Function">
+                    <param id="0" name="Name">&quot;stars&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="5025979682373364" type="System">
+                    <param id="0" name="Variable">stars</param>
+                    <param id="1" name="Value">&quot;&quot;</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="8848526326618135">
+                    <conditions>
+                        <condition id="-10" name="For" sid="441531570695344" type="System">
+                            <param id="0" name="Name">&quot;stars&quot;</param>
+                            <param id="1" name="Start index">1</param>
+                            <param id="2" name="End index">Function.Param(0)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="8237480301079338" type="System">
+                            <param id="0" name="Variable">stars</param>
+                            <param id="1" name="Value">stars &amp; &quot;*&quot;</param>
+                        </action>
+                        <action id="1" name="Set return value" sid="9187794324449346" type="Function">
+                            <param id="0" name="Value">stars</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
+</c2eventsheet>
